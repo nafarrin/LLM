@@ -1,3 +1,6 @@
+import tensorflow as tf
+from tensorflow.keras.layers import MultiHeadAttention, LayerNormalization, Dense
+
 class TransformerDecoderLayer(tf.keras.layers.Layer):
     def __init__(self, d_model, num_heads, dff, rate=0.1):
         super(TransformerDecoderLayer, self).__init__()
